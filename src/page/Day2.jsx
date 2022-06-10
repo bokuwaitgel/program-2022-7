@@ -26,7 +26,7 @@ const Data = {
 export const Day2 = () => {
   const { isMyMd } = useWindowDimensions();
   const [currentPage, setCurrentPage] = useState(1);
-  const [res, setRes] = useState([]);
+  const [res, setRes] = useState([0]);
   const pages = 3;
   return (
     <div className="flex flex-col min-h-screen justify-between	">

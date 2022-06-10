@@ -14,7 +14,7 @@ export const Right = (props) => {
         </Link>
         <Link to={value === 1 ? '/day2' : value === 2 ? '/day3' : '/'}>
           <div className="button-next center hover:bg-[#1A65EF] bg-[#9CA5B0]" onClick={() => {}}>
-            Дараагийн хуудас
+            Дараагийн өдөр
             <img src={rightArrow} className="w-8" />
           </div>
         </Link>
