@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Manrope, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body,
+#root {
+    height: 100% !important;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+nav * {
+    outline: none;
+}
+
+
+.my-custom-pagination-div {
+}
+
+.bordered-button {
+    border: 1px solid #2455E4;
+    border-radius: 4rem;
+}
+
+@layer utilities {
+    .home-banner-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .square-image {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 100%;
+        height: 0;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .active {
+        color: red;
+    }
+
+    .image-container {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 125%;
+        height: 0;
+    }
+
+    .image-container-company {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 60%;
+        height: 0;
+    }
+
+    .mobile-product-image {
+        width: 100vw;
+    }
+
+    .image-recommendation-container {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 50%;
+        height: 0;
+    }
+
+    .image-recommendation-product-container {
+        padding-bottom: 133%;
+        width: 100%;
+        overflow: hidden;
+        height: 0;
+    }
+
+    .people-image-container {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 133%;
+        height: 0;
+    }
+    .worker-image-container {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 100%;
+        height: 0;
+    }
+    .home-image-image-container {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 100%;
+        height: 0;
+    }
+    .people-image-container-center {
+        width: 100%;
+        margin-top: 60%;
+    }
+    .company-image-container-center {
+        width: 100%;
+    }
+
+    .landscape-image-container {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 160%;
+        height: 0;
+    }
+
+    .title {
+        font-family: Marcellus, serif;
+    }
+
+    .icon-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.opacityBackground {
+    background-color:rgba(31, 31, 31, 0.04);
+}
+.disableBackground {
+    background-color:#C4C4C4;
+}
+.icon-button svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+svg.star-svg {
+    display: inline;
+}
+
+
+.footer-color{
+    color: #2455E4
+}
+.arrow-cont{
+    border: 1px solid #2455E4;
+    border-radius: 40px;
+    width: 56px;
+    height: 56px;
+  }
+
+@layer components {
+    .layout-space {
+        @apply p-5;
+    }
+    .footer-p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        color: #2455E4;
+    }
+    .layout {
+        @apply container mx-auto h-max max-w-screen-xl grow;
+    }
+
+    .layout-height {
+        min-height: 100vh;
+        margin-bottom: 60px;
+    }
+
+    .font-banner-l {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    .font-display-l {
+        font-size: 3.5625rem;
+        line-height: 4rem;
+    }
+
+    .font-display-m {
+        font-size: 2.625rem;
+        line-height: 3.25rem;
+    }
+
+    .font-display-s {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+    }
+
+    .font-headline-l {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .font-headline-m {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+
+    .font-headline-s {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .font-title-l {
+        font-size: 1.375rem;
+        line-height: 1.75rem;
+    }
+
+    .font-title-m {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .font-title-s {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    .font-label-l {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+    }
+
+    .font-label-m {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        font-weight: 500;
+    }
+
+    .font-label-s {
+        font-size: 0.688rem;
+        line-height: 2rem;
+        font-weight: 500;
+    }
+
+    .font-body-l {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+
+    }
+
+    .font-body-m {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    .font-body-s {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+
+    .font-body-xs {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+}
+

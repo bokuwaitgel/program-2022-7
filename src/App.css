@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+div, a, p, span, input, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+.tour-wrapper {
+  background: linear-gradient(180deg, rgba(102, 153, 255, 0.73) 0%, #EAF1FF 100%);
+}
+.form-background{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 100vh;
+  min-width: 100vw;
+}
+.last-background{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left bottom;
+}
+.button-wrapper {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #1A65EF;
+  border-radius: 2.5rem;
+  line-height: 2.5rem;
+  padding: 8px 8px 8px 24px;
+}
+.button-wrapper-small{
+  margin: 0;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  background-color: #1A65EF;
+  border-radius: 40px;
+  line-height: 40px;
+  padding: 0.5rem 2rem 0.5rem 3rem;
+}
+.button-next {
+  display: flex;
+  align-items: center;
+  padding: 8px 8px 8px 32px;
+  gap: 16px;
+  width: auto;
+  height: 56px;
+  color: #FFFFFF;
+  border-radius: 40px;
+  margin-left: 10px;
+  margin-right: 60px;
+}
+button:hover, button:focus {
+  outline: none;
+}
+.ellipse{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #D9E2FF;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.ellipse-s{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2455E4;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+
+.custom-input{
+  color:#1A65EF;
+  padding: 1rem;
+  border-radius: 40px;
+  height: 150px;
+  flex-grow:10;
+  outline: none;
+  overflow: hidden;
+  border: 2px solid #1A65EF;
+  scroll-behavior: smooth;
+}
+
+.custom-input::placeholder{
+  color: #7298F8;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.left-fixed{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 45%;
+  left: 5rem;
+}
+.home-button-wrapper{
+  position: fixed;
+  top: 55%;
+}

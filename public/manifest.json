@@ -1,0 +1,25 @@
+{
+  "short_name": "Хөтөлбөр",
+  "name": "Хөтөлбөр",
+  "icons": [
+    {
+      "src": "tourLogo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon/svg"
+    },
+    {
+      "src": "tourLogo.png",
+      "type": "image/png",
+      "sizes": "201x140"
+    },
+    {
+      "src": "tourLogo.png",
+      "type": "image/png",
+      "sizes": "201x140"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
